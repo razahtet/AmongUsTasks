@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Card Swipe</title>
+    <link href="cardSwipe.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <h1 id = "title" style="color: white">Card Swipe</h1>
+<!--     <h5 id="startoff" style="color: white">Start by clicking the wallet</h5> -->
+    <div style="background-color:rgb(21, 21, 21, 255); margin-left: 30%; margin-right: auto; display: inline-block">
+      <div style="border: 5px solid black; display: inline; width: 35%; height: 35%; position: absolute">
+        <div id="outsideGray">
+          <div id="outputDiv">
+            PLEASE SWIPE CARD
+          </div>
+          <div style="width: 200%; height: 200%; position: absolute; left: 85%; top: 85%; border-radius: 100px">
+            <audio src="failedCardSwipe.mp3" id="failedSound"></audio>
+            <audio src="taskComplete.mp3" id="completedSound"></audio>
+            <div class="rgCircle" id="redCircle">
+
+            </div>
+            <div class="rgCircle" id="greenCircle">
+              
+            </div>
+          </div>
+        </div>
+      </div>
+      <div style = "background-color: gray; position: absolute; display: inline; top: 51.75%; width: 35%; height: 3%; margin-right: auto; margin-left: auto; border-color: rgb(80, 78, 79, 255); border-style: inset double; border-width: 5px"></div>
+      <div style="background-color:gray; margin-right: auto; display: block">
+        <div style="border: 5px solid black; display: inline; width: 35%; height: 35%; position: absolute; left: 30.25%; top: 56.25%; background-color: rgb(53, 53, 53, 255)">
+          
+          <div style="position: relative; top: 22%; left: -0.5%">
+            <img id = "wallet" src = "card_wallet.png" style="position: revert"/>
+          </div>
+          <img id = "card" src = "admin_card.png">
+        </div>
+      </div>
+    </div>
+    <script src="cardSwipe.js"></script>
+  </body>
+</html>
