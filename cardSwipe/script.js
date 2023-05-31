@@ -133,7 +133,7 @@ function rightC() {
   let firstB = document.createElement("button");
   firstB.innerHTML = "Go Back to See All Tasks";
   firstB.addEventListener("click", function() {
-    location.replace("index.html");
+    location.replace("../index.html");
   });
   let secondB = document.createElement("button");
   secondB.innerHTML = "View the Next Common Task";
