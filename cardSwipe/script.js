@@ -18,7 +18,7 @@ function showCard() {
 function goToSwipe() {
   wallet.removeEventListener("click", showCard);
   card.style.top = "-65%";
-  card.style.left = "-45%";
+  card.style.left = "-40%";
   dragElement(card);
 }
 
@@ -71,7 +71,7 @@ function dragElement(elmnt) {
     // stop moving when mouse button is released:
     document.onmouseup = null;
     document.onmousemove = null;
-    card.style.left = "-45%";
+    card.style.left = "-40%";
     if (letStop <= 440) {
       outputDiv.innerHTML = "BAD READ. TRY AGAIN.";
       wrongC();
