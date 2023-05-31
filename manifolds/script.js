@@ -47,11 +47,11 @@ function correctOrder() {
       if (randMin == 10) {
         taskComp();
       } else {
-        manifoldsSounds.src="manifolds" + randMin + ".mp3";
+        manifoldsSounds.src="manifolds/manifolds" + randMin + ".mp3";
         manifoldsSounds.play();
       }
     } else {
-      manifoldsSounds.src = "manifoldsWrong.mp3";
+      manifoldsSounds.src = "mainfolds/manifoldsWrong.mp3";
       manifoldsSounds.play();
       for (let i = 0; i < 3; i++) {
         setTimeout(function() {
