@@ -47,11 +47,11 @@ function correctOrder() {
       if (randMin == 10) {
         taskComp();
       } else {
-        manifoldsSounds.src="manifolds/manifolds" + randMin + ".mp3";
+        manifoldsSounds.src="manifolds" + randMin + ".mp3";
         manifoldsSounds.play();
       }
     } else {
-      manifoldsSounds.src = "mainfolds/manifoldsWrong.mp3";
+      manifoldsSounds.src = "manifoldsWrong.mp3";
       manifoldsSounds.play();
       for (let i = 0; i < 3; i++) {
         setTimeout(function() {
@@ -97,7 +97,7 @@ function taskComp() {
   let firstB = document.createElement("button");
   firstB.innerHTML = "Go Back to See All Tasks";
   firstB.addEventListener("click", function() {
-    location.replace("index.html");
+    location.replace("../index.html");
   });
   let secondB = document.createElement("button");
   secondB.innerHTML = "View the Next Short Task";
