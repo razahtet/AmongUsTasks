@@ -1,1 +1,53 @@
+body {
+  background-color: lightskyblue;
+  text-align: center;
+}
+
+button {
+  cursor: pointer;
+  background-color: orange;
+  color: white;
+  font-family: monospace, cursive;
+  border-style: inset double;
+  border: 10px ridge crimson;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+button:hover {
+  background-color: crimson;
+  color: orange;
+  border-color: wheat;
+}
+
+#tabSelect {
+  border: 5px inset gray;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 50%;
+  width: 25.75%;
+  background-color: black;
+}
+
+#tabSelect button {
+  display: inline;
+  color: black;
+  font-family: monospace;
+  text-align: center;
+  cursor: pointer;
+  background-color: darkgray;
+  /* border: 5px inset black; */
+}
+
+#tabSelect button:hover {
+  background-color: crimson;
+  color: white;
+  border-color: wheat;
+}
+
+#outputDiv div {
+  display: none;
+}
 
