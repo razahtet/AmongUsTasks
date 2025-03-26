@@ -95,16 +95,12 @@ function wrongC() {
   rgCircle[0].style.backgroundColor = "rgb(191, 5, 4, 255)";
   setTimeout(function() {
     rgCircle[0].style.backgroundColor = "rgb(114, 2, 2, 255)";
-  }, 1000);
+  }, 500);
 }
 
 function rightC() {
-  document.getElementById("completedSound").currentTime = 0.5;
+  document.getElementById("completedSound").currentTime = 0.25;
   document.getElementById("completedSound").play();
-  rgCircle[1].style.backgroundColor = "rgb(14, 236, 0, 255)";
-  setTimeout(function() {
-    rgCircle[1].style.backgroundColor = "rgb(0, 203, 11, 255)";
-  }, 1000);
   let firstD = document.createElement("div");
   document.body.appendChild(firstD);
   firstD.classList.add("blackUp");
@@ -123,7 +119,6 @@ function rightC() {
     document.body.removeChild(firstD);
     outputDiv.innerHTML = "PLEASE SWIPE CARD";
   });
-  
   let taskC = document.createElement("div");
   secondD.appendChild(taskC);
   taskC.innerHTML = "Task Completed!";
@@ -142,4 +137,8 @@ function rightC() {
   });
   aroundBDiv.appendChild(firstB);
   aroundBDiv.appendChild(secondB);
+  rgCircle[1].style.backgroundColor = "rgb(14, 236, 0, 255)";
+  setTimeout(function() {
+    rgCircle[1].style.backgroundColor = "rgb(0, 203, 11, 255)";
+  }, 500);
 }
